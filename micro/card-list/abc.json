@@ -1,0 +1,14 @@
+{
+  "assets":{
+      "type":"command",
+      "command":{
+          "cmd":[
+            "tnpm install",
+            "tnpm run build",
+            "rm ./build/static/js/*.LICENSE",
+            "mkdir -p $BUILD_DEST",
+            "mv ./build $BUILD_DEST"
+          ]
+      }
+  }
+}
